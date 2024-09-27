@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chris Jones</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/2.1.0/showdown.min.js" integrity="sha512-LhccdVNGe2QMEfI3x4DVV3ckMRe36TfydKss6mJpdHjNFiV07dFpS2xzeZedptKZrwxfICJpez09iNioiSZ3hA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/init_with_api.js"></script>
+    <script>
+    window.onload = init;
+    </script>
+</head>
+<body>
+    <div class="banner"></div>
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="../portfolio/">Teaching Portfolio</a>
+        <a href="../personal/">Personal Projects</a>
+    </div>
+    <div class="content">
+        <div id="md_to_html"></div>
+        <script>
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const key = urlParams.get('id');
+            md_to_html(key + '.md');
+        </script>
+    </div>
+    <footer id="footer">
+        <p id="HTMLCSS"></p>
+        <p>
+        <a id="vLink1"><strong>HTML </strong> Validator</a> |
+        <a id="vLink2"><strong>CSS </strong> Validator</a>
+        </p>
+    </footer>
+</body>
+</html>

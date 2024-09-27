@@ -1,3 +1,3 @@
-# cmj7gh.github.io
-# cmj7gh.github.io
-# cmj7gh.github.io
+# My Personal Website
+
+[Click here to open in Github Pages](cmj7gh.github.io)
